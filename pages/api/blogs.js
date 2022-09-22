@@ -1,4 +1,4 @@
-import  {getBlogs}  from "../../src/blogsDescription"
+import  {getBlogs}  from "../../src/blogs-description"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default async(req, res) => {

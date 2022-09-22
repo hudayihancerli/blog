@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import BlogList from "../components/blogsList";
+import BlogList from "../components/blogs-list";
 import styles from "../styles/Home.module.css";
 
 export  function Home(blogs) {

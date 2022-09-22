@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/Link";
-import styles from './BlogsList.module.css';
+import styles from './Blogs-list.module.css';
 
 export const BlogList = ({blogs}) => {
 
@@ -19,7 +19,7 @@ export const BlogList = ({blogs}) => {
     return text;
   }
 
-
+  
   return(
     blogs.map((blog) =>(
       <div className={styles.card} key={blog.id}>
