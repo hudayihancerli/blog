@@ -1,0 +1,21 @@
+.backHome{
+    position: fixed;
+    top: 4rem;
+    right: calc(100vw/3.3);
+    padding: 1rem;
+    border-radius: 999px;
+    background-color: rgba(0, 236, 158, 0.212);
+
+}
+
+.backHome a{
+    color: rgb(0, 236, 158);
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 800px) {
+    .backHome{
+        top: calc(100vh / 2);
+        right: 1rem;
+    }
+}

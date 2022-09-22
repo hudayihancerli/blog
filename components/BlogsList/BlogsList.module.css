@@ -1,0 +1,46 @@
+
+.card{
+  border: .1rem solid rgba(22, 137, 190, 0.767);
+  padding: 1rem;
+}
+
+.cardHead{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin-block-end: .8rem;
+}
+
+.cardTitle{
+  font-weight: 700;
+  text-transform: capitalize;
+
+}
+
+.blogDate{
+  color: gray;
+  font-size: 14px;
+  font-weight:lighter;
+}
+
+.readTime{
+  color:tomato;
+  font-size: 14px;
+}
+
+.cardDescription{
+  display: inline;
+}
+
+.readMore{
+  color: rgb(147, 93, 247);
+  text-decoration: none;
+  padding-inline-start: 1rem;
+}
+
+.readMore:hover{
+  text-decoration: underline;
+  font-weight: 700;
+}
