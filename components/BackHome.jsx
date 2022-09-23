@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from './Back-home.module.css';
+import styles from '../styles/BackHome.module.css';
 
 export const BackHome = () => {
     return(

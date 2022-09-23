@@ -2,10 +2,10 @@ import React from "react";
 
 import Head from 'next/head'
 
-import Header from "../Header/index"
-import Footer from "../Footer/index"
+import Header from "./Header"
+import Footer from "./Footer"
 
-import styles from './Layout.module.css'
+import styles from '../styles/Layout.module.css'
 
 
 export const Layout = ({ children, isHome}) => {
