@@ -2,6 +2,8 @@ import Layout from "../components/Layout";
 import BlogList from "../components/BlogsList";
 import styles from "../styles/Home.module.css";
 
+
+
 export  function Home(blogs) {
   return (
     <Layout isHome={'yes'}>
@@ -28,7 +30,7 @@ export const getServerSideProps = async () => {
   const json = await res.json();
   return {
       props: {
-          blogs: json.blogs
+        blogs: json.blogs
       },
   }
 }
