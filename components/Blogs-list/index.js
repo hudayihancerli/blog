@@ -1,11 +1,9 @@
-import React from "react";
 import Link from "next/Link";
 import styles from './Blogs-list.module.css';
 
 export const BlogList = ({blogs}) => {
 
   const maxCharacter = (text) => {
-
     let i = 75;
     if(text.length > i){
       while (i > 10) {
