@@ -1,6 +1,8 @@
 import React from "react";
-import styles from '../styles/Header.module.css'
+
 import Image from 'next/image'
+
+import styles from './Header.module.css'
 
 export const Header = () => {
     return (

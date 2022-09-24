@@ -1,7 +1,8 @@
 import React from "react";
-import Layout from "../../components/Layout";
-import BackHome from "../../components/BackHome";
+
 import styles from '../../styles/Blog.module.css'
+
+import {Layout, BackHome} from '../../components'
 
 export const Blog = ({blogs,blogId}) => {
     if(!blogId) 

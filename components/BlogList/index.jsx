@@ -1,5 +1,6 @@
 import Link from "next/link";
-import styles from '../styles/BlogsList.module.css';
+
+import styles from './BlogsList.module.css';
 
 export const BlogList = ({blogs}) => {
 
