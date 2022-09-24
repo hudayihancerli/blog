@@ -24,7 +24,8 @@ export const Blog = ({blogs,blogId}) => {
 
 export const getServerSideProps = async (context) => {
     const { blogId } = context.params;
-    const res = await fetch(`http://localhost:3000/api/blogs`);
+    // http://localhost:3000/api/blogs
+    const res = await fetch(`http://blogum-jade.vercel.app/api/blogs`);
     const json = await res.json();
     return {
         props: {
