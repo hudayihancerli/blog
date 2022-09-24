@@ -26,7 +26,7 @@ export  function Home(blogs) {
 
 export const getServerSideProps = async () => {
   // http://localhost:3000/api/blogs
-  const res = await fetch(`http://blogum-jade.vercel.app/api/blogs`);
+  const res = await fetch(`http://blogum-ten.vercel.app/api/blogs`);
   const json = await res.json();
   return {
       props: {
