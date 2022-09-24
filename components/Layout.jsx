@@ -23,7 +23,7 @@ export const Layout = ({ children, isHome}) => {
             </Head>
 
             
-             {isHome ? <Header /> : null}
+            {isHome ? <Header /> : null}
             
 
             <main>{children}</main>

@@ -1,4 +1,4 @@
-import Link from "next/Link";
+import Link from "next/link";
 import styles from '../styles/BlogsList.module.css';
 
 export const BlogList = ({blogs}) => {
@@ -8,7 +8,7 @@ export const BlogList = ({blogs}) => {
     if(text.length > i){
       while (i > 10) {
         if(text[i] == ' '){
-          text = text.substring(0, i);
+          text = text.substring(0, i)
           break;
         }
         i++
@@ -31,6 +31,7 @@ export const BlogList = ({blogs}) => {
               {
                 maxCharacter(blog.cardDescription)
               }
+               ...
             </p>
             <Link href={`/blogs/${blog.id}`}><a className={styles.readMore}>Devamını oku</a></Link>
           </div>
