@@ -24,10 +24,10 @@ export const Blog = ({blogs,blogId}) => {
 
 export const getServerSideProps = async (context) => {
     const { blogId } = context.params;
-    const localhost = `http://localhost:3000/api/blogs`;
+    // const localhost = `http://localhost:3000/api/blogs`;
     const vercel = `http://blogum-ten.vercel.app/api/blogs`;
   
-    const res = await fetch(localhost || vercel);
+    const res = await fetch(vercel);
     const json = await res.json();
     return {
         props: {

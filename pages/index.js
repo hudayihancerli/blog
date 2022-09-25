@@ -26,10 +26,10 @@ export  function Home(blogs) {
 
 export const getServerSideProps = async () => {
   
-  const localhost = `http://localhost:3000/api/blogs`;
+  // const localhost = `http://localhost:3000/api/blogs`;
   const vercel = `http://blogum-ten.vercel.app/api/blogs`;
 
-  const res = await fetch(localhost || vercel);
+  const res = await fetch(vercel);
   const json = await res.json();
 
   return {
