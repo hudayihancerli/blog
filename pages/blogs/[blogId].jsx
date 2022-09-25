@@ -13,10 +13,10 @@ export const Blog = ({blogs,blogId}) => {
         
         return (
             <Layout>
-            <BackHome />
             <h1 className={styles.title}>{blogs[blogId].cardTitle}</h1>
             <span className={styles.blogDate}>{blogs[blogId].blogDate}</span>
             <p className={styles.paragraph}>{blogs[blogId].cardDescription}</p>
+            <BackHome />
             </Layout>
         )
     }    
@@ -24,8 +24,10 @@ export const Blog = ({blogs,blogId}) => {
 
 export const getServerSideProps = async (context) => {
     const { blogId } = context.params;
-    // http://localhost:3000/api/blogs
-    const res = await fetch(`http://blogum-ten.vercel.app/api/blogs`);
+    const localhost = `http://localhost:3000/api/blogs`;
+    const vercel = `http://blogum-ten.vercel.app/api/blogs`;
+  
+    const res = await fetch(localhost || vercel);
     const json = await res.json();
     return {
         props: {

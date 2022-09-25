@@ -1,11 +1,19 @@
 .backHome{
-    position: fixed;
-    top: 4rem;
-    right: calc(100vw/3.3);
+    position:fixed;
+    bottom: 10rem;
+    right: 10rem;
+
     padding: 1rem;
     border-radius: 999px;
-    background-color: rgba(0, 236, 158, 0.212);
+    background-color: rgba(0, 236, 158, 0.2);
 
+    transition: 1s ease-in-out ;
+}
+
+.backHome:hover{
+    background-color: rgba(0, 236, 158, 0.6);
+    font-weight: bolder;
+    box-shadow: 0px 0px 1rem rgb(166, 161, 248);
 }
 
 .backHome a{
@@ -17,5 +25,7 @@
     .backHome{
         top: calc(100vh / 2);
         right: 1rem;
+        padding: 1.2rem;
+        height: fit-content;
     }
 }

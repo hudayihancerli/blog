@@ -8,14 +8,14 @@
 .outLink{
   background-color:rgb(188, 248, 248);
   color:rgb(34, 121, 235);
-  padding: .2rem .4rem;
+  padding: 0 .4rem;
   border-radius: .4rem;
-  transition: all 1.2s;
+  transition: all 4s ease;
 }
 
 .outLink:hover{
-  background-color:rgba(163, 41, 233, 0.534);
-  color:#fff;
+  color:rgb(62, 137, 235);
+  box-shadow: 0 0 1rem rgb(34, 121, 235);
   transition: all 1s;
 }
 
