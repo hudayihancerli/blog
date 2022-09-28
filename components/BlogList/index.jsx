@@ -17,7 +17,6 @@ export const BlogList = ({blogs}) => {
     }
     return text;
   }
-
   
   return(
     blogs.map((blog) =>(
@@ -40,5 +39,3 @@ export const BlogList = ({blogs}) => {
        ) )
     )
 }
-
-export default BlogList;

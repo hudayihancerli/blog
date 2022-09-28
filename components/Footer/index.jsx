@@ -2,7 +2,6 @@ import React from "react";
 
 import styles from './Footer.module.css'
 
-
 export const Footer = () => {
     const date = new Date();
 
@@ -20,5 +19,3 @@ export const Footer = () => {
         </footer>
     )
 }
-
-export default Footer;
